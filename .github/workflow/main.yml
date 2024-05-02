@@ -1,0 +1,22 @@
+name: Backend Deployment
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy latest backend
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          key: ${{ secrets.SSH_KEY }}
+          username: ${{ secrets.SSH_USERNAME }}
+
+          script: |
+            cd AG4U-Backend
+            git pull
+            echo 'GitHub repository pulled from origin'

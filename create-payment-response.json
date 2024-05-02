@@ -1,0 +1,38 @@
+{
+    "msg": "Payment Creation Success",
+    "response": {
+        "paymentDetails": {
+            "payment_key_id": "6866",
+            "payment_name": "Nur Fikhidaa binti Fikri",
+            "payment_ref_no": "tmtG7lLhMCfbpo",
+            "payment_invoice_no": "cFGwxO-wN0PBkgPe",
+            "payment_email": "fikrichuck@gmail.com",
+            "payment_phone_number": null,
+            "payment_phone_country_code": null,
+            "payment_desc": "Payment for February 2024",
+            "payment_option": "one_off",
+            "payment_type_allow": "All",
+            "payment_unique_key": "kMQabzIzmjncmYFgvZF9rEkaUSb0jChx3BtYoocHtsVaTuTKqO1TgFj9d1cw9pqsnD3ULW0VZwwoP5seOzpUGsUnnsJm7MAWIRc1LiTraXkpTgWOzRB7TT90qMi5esVyRbkxDBhQomMQrxMAG1ZN0rE0eba9imMkSUxSLwhnKcyKqnaFEmEhnB3buR1TBK",
+            "payment_amount": "450.00",
+            "payment_status": "pending",
+            "payment_created_datetime": "2024-02-22 03:24:16",
+            "payment_callback_url": "https://dev-api.ag4u.com.my/v2/payments/callback",
+            "payment_redirect_url": "https://ag4u.com.my",
+            "payment_link": "https://checkout-staging.tpay.com.my/checkout/checkout?uniqueToken=kMQabzIzmjncmYFgvZF9rEkaUSb0jChx3BtYoocHtsVaTuTKqO1TgFj9d1cw9pqsnD3ULW0VZwwoP5seOzpUGsUnnsJm7MAWIRc1LiTraXkpTgWOzRB7TT90qMi5esVyRbkxDBhQomMQrxMAG1ZN0rE0eba9imMkSUxSLwhnKcyKqnaFEmEhnB3buR1TBK",
+            "payment_custom_fields": [
+                {
+                    "title": "studentID",
+                    "value": "66Gl4rGK-iGvxP8ZN61P_"
+                },
+                {
+                    "title": "paymentKey",
+                    "value": "2024-02"
+                },
+                {
+                    "title": "type",
+                    "value": "MONTHLY"
+                }
+            ]
+        }
+    }
+}

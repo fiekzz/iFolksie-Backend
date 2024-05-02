@@ -1,0 +1,58 @@
+{
+  "name": "ag4u-backend",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/luxon": "^3.4.1",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "bun ./lib/index.ts",
+    "dev": "bun run --hot lib/index.ts",
+    "build": "tsc",
+    "node:dev": "nodemon --watch lib --exec \"yarn node:start\"",
+    "node:start": "node --env-file='.env' --experimental-specifier-resolution=node --loader ts-node/esm ./lib/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.490.0",
+    "@aws-sdk/client-sesv2": "^3.490.0",
+    "@aws-sdk/credential-providers": "^3.490.0",
+    "@aws-sdk/lib-storage": "^3.496.0",
+    "@aws-sdk/s3-request-presigner": "^3.490.0",
+    "@aws-sdk/util-format-url": "^3.489.0",
+    "@builder.io/partytown": "^0.9.1",
+    "@hono/node-server": "^1.4.0",
+    "@hono/zod-validator": "^0.1.11",
+    "@prisma/client": "latest",
+    "@types/node": "^20.10.6",
+    "@types/pdfkit": "^0.13.4",
+    "argon2": "^0.31.2",
+    "axios": "^1.6.5",
+    "blurhash": "^2.0.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.0.0",
+    "handlebars": "^4.7.8",
+    "hono": "^3.12.0",
+    "js-sha256": "^0.11.0",
+    "luxon": "^3.4.4",
+    "nanoid": "^5.0.4",
+    "parse-multipart-data": "^1.5.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "pdfkit": "^0.14.0",
+    "prisma": "^5.7.1",
+    "redis": "^4.6.13",
+    "sharp": "^0.33.2",
+    "telegraf": "^4.16.3",
+    "zod": "^3.22.4",
+    "zod_utilz": "^0.7.3"
+  }
+}

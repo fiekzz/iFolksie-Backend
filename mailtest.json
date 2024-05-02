@@ -1,0 +1,9 @@
+{
+    "Source":"AG4U <no-reply@ag4u.com.my>",
+    "Template": "AG4UConfirmationEmail",
+    "Destination": {
+      "ToAddresses": [ "elyasasmadz@gmail.com"
+      ]
+    },
+    "TemplateData": "{ \"name\":\"Alejandro\", \"favoriteanimal\": \"alligator\" }"
+}
