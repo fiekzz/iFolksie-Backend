@@ -21,7 +21,7 @@ parentLoginAuthAPI.post("/", zValidator("json", zLoginTypes), async (c) => {
                 Role: {
                     some: {
                         RoleName: {
-                            in: ['Parent', 'Administrator']
+                            in: ['Guardian', 'Administrator']
                         }
                     }
                 }

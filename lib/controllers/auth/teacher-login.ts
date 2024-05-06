@@ -24,7 +24,7 @@ teacherLoginAuthAPI.post("/", zValidator("json", zLoginTypes), async (c) => {
                     some: {
                         RoleName: {
                             // equals: 'Staff'
-                            in: ["Staff", "Administrator", "Branch Manager"],
+                            in: ["Caregiver", "Administrator"],
                         },
                     },
                 },
